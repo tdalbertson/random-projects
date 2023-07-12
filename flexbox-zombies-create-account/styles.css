@@ -6,6 +6,15 @@ body * {
     box-sizing: border-box;
 }
 
+input[type="text"] {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+input::placeholder {
+    color: rgb(178, 178, 178);
+}
+
 .box-container {
     position: absolute;
     top: 50%;
@@ -20,8 +29,8 @@ body * {
     justify-content: center;
     background-color: rgb(51, 28, 72);
     color: #fff;
-    width: 404px;
-    height: 418px;
+    width: 530px;
+    height: 516px;
     padding: 56px;
 }
 
@@ -30,13 +39,66 @@ body * {
 }
 
 .main-box h1 {
-    font-style: italic;
+    margin-top: 0px;
+    font-family: 'Carter One', cursive;
+    font-size: 2.04rem;
+    margin-bottom: 8.160px;
+    font-weight: normal;
 }
 
 p.create-account-text {
-    color: rgb(255, 255, 255, 0.8);
+    color: #fff;
+    margin-top: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
 }
 
 .user-form {
+    display: flex;
     list-style: none;
+    padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-form li {
+    flex: 1 0 100%;
+}
+
+.user-form input, .user-form button {
+    width: 100%;
+    padding: 12px;
+}
+
+.create-account-button {
+    background-color: rgb(92, 150, 195);
+    border: none;
+    font-size: 0.875em;
+    line-height: 1.25em;
+    color: #fff;
+}
+
+.create-account-button:hover {
+    cursor: pointer;
+    background-color: #ed3662;
+}
+
+.sign-in-container p {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875em;
+}
+
+.sign-in-container a {
+    color: rgb(92, 150, 195);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875em;
+}
+
+.sign-in-container a:hover {
+    color: rgb(237, 54, 98);
 }
